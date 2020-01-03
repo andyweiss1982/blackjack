@@ -1,0 +1,49 @@
+.main {
+  min-width: 1000px;
+  text-align: center;
+}
+
+@media (max-width: 1000px){
+  .main {
+    min-width: 95%;
+    max-width: 95%;
+  }
+}
+
+.button {
+  font-size: 1.5rem;
+  width: 200px;
+  margin: 10px;
+  padding: 5px;
+  background-color: darkblue;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+}
+
+.hand {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.hand.hidden .cardBack:first-child > .card {
+  opacity: 0;
+}
+
+.card {
+  width: 150px;
+  height: 209px;
+  object-fit: cover;
+}
+
+.cardBack {
+  width: 150px;
+  height: 209px;
+  background-color: #384F89;
+  margin: 3px;
+  border-radius: 8px;
+}
